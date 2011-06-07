@@ -21,6 +21,6 @@ $result = $tinysong->single_tinysong_metadata($query)
 
 
 echo "<pre>";
-print_r($var);
+print_r($result);
 echo "</pre>";
 ?>
