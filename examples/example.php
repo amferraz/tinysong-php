@@ -8,16 +8,17 @@
  */
 require_once '../src/tinysong.php';
 
-$api_key = 'YOU_TINYSONG_API_KEY';
+$api_key = 'YOUR_TINYSONG_API_KEY';
 
-$query = 'john mayer slow dancing in a burning room';
+$query = 'carlinhos brown ararinha';
 
 
 $tinysong = new Tinysong($api_key);
 
 
-$result = $tinysong->single_tinysong_metadata($query)
-        ->execute();
+$result = $tinysong
+            ->search($query)
+            ->execute();
 
 
 echo "<pre>";
